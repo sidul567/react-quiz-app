@@ -7,7 +7,7 @@
 /.env.local/.firebase
 /.build
 /.firebaserc
-/.firebase.json
+/firebase.json
 /.firebase
 
 # testing
