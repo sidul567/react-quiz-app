@@ -1,0 +1,34 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+}
+.ball{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: loading 2s ease infinite;
+}
+.blue{
+    background-color: #4285F5;
+}
+.red{
+    background-color: #EA4436;
+    animation-delay: 0.25s;
+}
+.yellow{
+    background-color: #FBBD06;
+    animation-delay: 0.5s;
+}
+.green{
+    background-color: #34A952;
+    animation-delay: 0.75s;
+}
+@keyframes loading{
+    50%{
+        transform: translateY(25px);
+    }
+}

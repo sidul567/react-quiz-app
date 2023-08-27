@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root{
+    --bodyBackGround : #f2f4f8;
+    --successGreen : #6C63FF;
+    --dangerRed : #ffc0c7;
+    --questionBg : #e4e8ee;
+    --fontPrimary : #002333;
+    --btnFont: #ffffff;
+    --active : #6C63FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fontPrimary);
+    font-family: "Montserrat",sans-serif;
+}
+
+body{
+    background-color: var(--bodyBackGround);
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+h4{
+    color: #7c83a7;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.info{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.error{
+    background-color: var(--dangerRed);
+    padding: 0.6rem 1.2rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.success{
+    background-color: var(--successGreen);
+    padding: 0.6rem 1.2rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.transitionOn{
+    opacity: 1;
+    transition: all 1s;
+    visibility: visible;
+}
+.transitionOff{
+    opacity: 0;
+    transition: all 1s;
+    visibility: hidden;
+}
+.d-none{
+    display: none;
+}
+.check{
+    color: var(--successGreen);
+}
+
+.w-100{
+    width: 100%;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.button{
+    height: 44px;
+    margin-top: 2rem;
+}
+
+.infinite-scroll-component {
+    width: 100%;
+    display: grid;
+    margin: 3rem auto;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-items: center;
+    gap: 20px;
+    row-gap: 20px;
+}
+
+.global{
+    height: 100vh;
+}
+.imageLoading{
+    height: 68%;
+}
+
+@media only screen and(max-width : 600px){
+    .infinite-scroll-component{
+        width: 90%;
+    }
+}
+
+@media only screen and(max-width : 1023px){
+    .column{
+        grid-template-columns: 1fr;
+    }
+}

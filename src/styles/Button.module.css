@@ -1,0 +1,28 @@
+.button{
+    background: var(--successGreen);
+    color: var(--btnFont);
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.button:hover{
+    background: var(--fontPrimary);
+    color: #fff;
+}
+
+.button:hover span{
+    color: #fff;
+}
+
+.button span{
+    color: var(--btnFont);
+}
